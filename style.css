@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Tahoma', sans-serif;
+  }
+  
+  header {
+    width: 100%;    
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    top: 0;
+    position: fixed;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .logo h1 {
+    margin-right: 10px;
+  }
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    display: none;
+    height: 30px;
+    width: 30px;
+  }
+  
+  .menu-bars {
+    background-color: #fff;
+    display: block;
+    height: 3px;
+    width: 100%;
+    margin: 6px 0;
+  }
+  @media (max-width: 768px) {
+    .logo h1 {
+      font-size: 1.2em;
+      text-align: center;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #007bff;
+      margin: 0;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      z-index: 1;
+    }
+    
+    .menu-icon {
+      display: block;
+    }
+    
+    .show-menu {
+      display: flex;
+    }
+  }  
+  
+  
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .hero img {
+    width: 40%;
+    height: auto;
+  }
+  
+  .hero-text {
+    width: 50%;
+    text-align: right;
+  }
+  
+  .hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #2196F3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .carwashes h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: right;
+  }
+  
+  .carwashes form {
+    margin-bottom: 2rem;
+    text-align: right;
+  }
+  
+  .carwashes form input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 1rem;
+  }
+  
+  .carwashes form button {
+    padding: 0.5rem 1rem;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .carwash-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .carwash {
+    width: 30%;
+    margin-bottom: 2rem;
+  }
+  
+  .carwash img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .carwash h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .carwash p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    }
+    
+    .carwash .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    }
+    
+    footer {
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    }
+    
+    .contact-info h3,
+    .social-media h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    }
+    
+    .contact-info p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    }
+    
+    .social-media ul {
+    list-style: none;
+    display: flex;
+    }
+    
+    .social-media ul li {
+    margin-right: 1rem;
+    }
+    
+    .social-media ul li a {
+    color: #000;
+    font-size: 5rem;
+    }
+    @media screen and (max-width: 768px) {
+.hero {
+flex-direction: column;
+}
+
+.hero img {
+width: 80%;
+margin-bottom: 2rem;
+}
+
+.hero-text {
+width: 100%;
+}
+
+.carwashes form {
+display: flex;
+flex-wrap: wrap;
+}
+
+.carwashes form input[type="text"] {
+margin-right: 0;
+margin-bottom: 1rem;
+}
+
+.carwashes form button {
+width: 100%;
+}
+
+.carwash {
+width: 45%;
+}
+}
+.line-div {
+    border-top: 5px solid rgb(160, 160, 160);
+    padding-top: 10px;
+  }

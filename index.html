@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>احجز مغاسل السيارات</title>
+  <link rel="stylesheet" href="style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./booking-5930411_960_720.png" alt="شعار الشركة">
+      <h1 style="text-align: center;"> احجز مغاسل السيارات </h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="./index.html ">الرئيسية</a></li>
+        <li><a href="./packages.html">للشركات</a></li>
+        <li><a href="./index.html#carwashes">المغاسل</a></li>
+        <li><a href="./connect.html">اتصل بنا</a></li>
+      </ul>
+      <div class="menu-icon">
+        <span class="menu-bars"></span>
+        <span class="menu-bars"></span>
+        <span class="menu-bars"></span>
+      </div>
+    </nav>
+  </header> 
+  <main>
+    <div class="hero">
+      <img src="./—Pngtree—flat style illustration of car_6680052.png" alt="صورة سيارة">
+      <div class="hero-text">
+        <h2>تجربة غسيل سيارة لا تنسى</h2>
+        <p>نحن نقدم أفضل خدمات مغاسل السيارات بأسعار تنافسية وجودة عالية</p>
+        <a href="#" class="btn">احجز الآن</a>
+      </div>
+    </div>
+    <div class="line-div">
+    </div>
+    <div id="carwashes">
+    <div class="carwashes">
+      <h2>المغاسل المتاحة</h2>
+      <form>
+        <input type="text" name="search" placeholder="ابحث عن مغسلتك...">
+        <button type="submit">بحث</button>
+      </form>
+      <div class="carwash-list">
+        <div class="carwash">
+          <img src="./—Pngtree—flat style illustration of car_6681535.png" alt="مغاسل السيارات 1">
+          <h3>مغسلة السيارات 1</h3>
+          <p>وصف مغسلة السيارات 1</p>
+          <a href="#" class="btn">احجز الآن</a>
+        </div>
+        <div class="carwash">
+          <img src="./—Pngtree—car wash worker washing car_6681531.png" alt="مغاسل السيارات 2">
+          <h3>مغسلة السيارات 2</h3>
+          <p>وصف مغسلة السيارات 2</p>
+          <a href="#" class="btn">احجز الآن</a>
+        </div>
+        <div class="carwash">
+          <img src="./—Pngtree—car wash worker washing vehicle_6821629.png" alt="مغاسل السيارات 3">
+          <h3>مغسلة السيارات 3</h3>
+          <p>وصف مغسلة السيارات 3</p>
+          <a href="#" class="btn">احجز الآن</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div id="contact-info">
+    <div class="contact-info">
+      <h3>اتصل بنا</h3>
+      <p>123 شارع المثنى، الرياض</p>
+      <p>0123456789</p>
+      <p>info@carwash.com</p>
+    </div>
+    </div>
+    <div class="social-media">
+      <h3>تابعنا</h3>
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<script>
+  const menuIcon = document.querySelector('.menu-icon');
+const menu = document.querySelector('.menu');
+
+menuIcon.addEventListener('click', () => {
+  menu.classList.toggle('show-menu');
+});
+
+</script>
+</html>

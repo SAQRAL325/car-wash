@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>احجز مغاسل السيارات</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_packages.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./booking-5930411_960_720.png" alt="شعار الشركة">
+      <h1 style="text-align: center;"> احجز مغاسل السيارات </h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="./index.html ">الرئيسية</a></li>
+        <li><a href="./packages.html">للشركات</a></li>
+        <li><a href="./index.html#carwashes">المغاسل</a></li>
+        <li><a href="./connect.html">اتصل بنا</a></li>
+      </ul>
+      <div class="menu-icon">
+        <span class="menu-bars"></span>
+        <span class="menu-bars"></span>
+        <span class="menu-bars"></span>
+      </div>
+    </nav>
+  </header> 
+  <div class="container">
+    <div class="package-container">
+      <div class="packages">
+        <h1>Basic</h1>
+        <h2 class="text1">&dollar;9.99</h2>
+        <h2 class="text2">&dollar;119.99</h2>
+        <ul class="list">
+          <li class="first">2000 Subscribers</li>
+          <li>12,000 Emails/month</li>
+          <li>Multi-User Accounts</li>
+          <li>Email Support</li>
+        </ul>
+        <a href="#" class="button button1">Start Now</a>
+      </div>
+      <div class="packages">
+        <h1>Professional</h1>
+        <h2 class="text1">&dollar;19.99</h2>
+        <h2 class="text2">&dollar;239.99</h2>
+        <ul class="list">
+          <li class="first">Basic +</li>
+          <li>Landing Pages</li>
+          <li>Pop-up Forms</li>
+          <li>Premium Support</li>
+        </ul>
+        <a href="#" class="button button2">Start Now</a>
+      </div>
+      <div class="packages">
+        <h1>Master</h1>
+        <h2 class="text1">&dollar;29.99</h2>
+        <h2 class="text2">&dollar;359.99</h2>
+        <ul class="list">
+          <li class="first">Professional +</li>
+          <li>Marketing Automation</li>
+          <li>Instagram Ads</li>
+          <li>Facebook Ads</li>
+        </ul>
+        <a href="#" class="button button3">Start Now</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function check() {
+  var checkBox = document.getElementById("checbox");
+  var text1 = document.getElementsByClassName("text1");
+  var text2 = document.getElementsByClassName("text2");
+
+  for (var i = 0; i < text1.length; i++) {
+    if (checkBox.checked == true) {
+      text1[i].style.display = "block";
+      text2[i].style.display = "none";
+    } else if (checkBox.checked == false) {
+      text1[i].style.display = "none";
+      text2[i].style.display = "block";
+    }
+  }
+}
+check();
+
+  </script>
+  <footer style="bottom: 0; width: 100%;">
+    <div id="contact-info">
+    <div class="contact-info">
+      <h3>اتصل بنا</h3>
+      <p>123 شارع المثنى، الرياض</p>
+      <p>0123456789</p>
+      <p>info@carwash.com</p>
+    </div>
+    </div>
+    <div class="social-media">
+      <h3>تابعنا</h3>
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<script>
+  const menuIcon = document.querySelector('.menu-icon');
+const menu = document.querySelector('.menu');
+
+menuIcon.addEventListener('click', () => {
+  menu.classList.toggle('show-menu');
+});
+
+</script>
+</html>
