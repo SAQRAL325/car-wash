@@ -88,6 +88,16 @@
   </footer>
 </body>
 <script>
+var event = new EventKit.EKEventEditViewController();
+
+// تعيين بيانات الحجز المطلوبة
+event.event.title = "عنوان الحجز";
+event.event.startDate = new Date("2023-03-08T10:00:00Z");
+event.event.endDate = new Date("2023-03-08T11:00:00Z");
+
+// عرض نافذة إضافة الحدث
+event.presentViewController();
+
   const menuIcon = document.querySelector('.menu-icon');
 const menu = document.querySelector('.menu');
 
